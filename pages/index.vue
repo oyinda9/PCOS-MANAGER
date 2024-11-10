@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white text-gray-800">
       <!-- Hero Section -->
-      <section class="relative bg-blue-600 text-white py-20">
+      <section class="relative bg-pink-400 text-white py-20">
         <div class="absolute inset-0">
           <img
             src="https://source.unsplash.com/1600x900/?health,wellness,pcos"
@@ -14,11 +14,13 @@
           <p class="text-lg md:text-xl mb-8">
             Manage your PCOS, reduce stress, and improve your overall health with personalized tips and recommendations.
           </p>
-          <NuxtLink to="/signup">
+       
+          <NuxtLink to="../auth/signup">
             <button class="bg-yellow-400 text-gray-800 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition">
               Get Started
             </button>
           </NuxtLink>
+       
         </div>
       </section>
   
@@ -65,7 +67,7 @@
       </section>
   
       <!-- Call to Action Section -->
-      <section class="bg-yellow-400 py-16 text-center">
+      <section class="bg-pink-400 py-16 text-center">
         <h2 class="text-3xl font-semibold text-white mb-6">Take Control of Your Health Today</h2>
         <p class="text-lg text-white mb-8">Join us now and start managing your PCOS with tailored advice and support.</p>
         <NuxtLink to="/signup">
