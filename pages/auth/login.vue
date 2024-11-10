@@ -1,60 +1,53 @@
 <template>
-    <div class="signup-container flex flex-col items-center bg-light-purple min-h-screen p-8">
-      <div class="header-text text-center">
-        <h1 class="text-3xl font-semibold text-deep-purple">Join Our PCOS Community</h1>
-        <p class="mt-2 text-gray-600">Take the first step toward a healthier you. We’re here to support your journey.</p>
+  <div class="flex min-h-screen bg-[#faf0f8]">
+    <!-- Left side with the login form -->
+    <div class="w-full lg:w-1/2 flex flex-col items-center justify-center p-8">
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-semibold text-[#b8579a]">Welcome Back!</h1>
+        <p class="mt-2 text-gray-700">Log in to access your personalized PCOS support dashboard.</p>
       </div>
-      
-      <form class="signup-form w-full max-w-md bg-white shadow-lg p-6 rounded-lg mt-8">
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="full-name">Full Name</label>
-          <input type="text" id="full-name" placeholder="Enter your full name" class="input-field" />
-        </div>
-        
+
+      <form class="w-full max-w-md bg-white shadow-lg p-6 rounded-lg">
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email Address</label>
-          <input type="email" id="email" placeholder="Enter your email" class="input-field" />
+          <input type="email" id="email" placeholder="Enter your email" 
+                 class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#b8579a]" />
         </div>
-  
+
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
-          <input type="password" id="password" placeholder="Create a password" class="input-field" />
+          <input type="password" id="password" placeholder="Enter your password" 
+                 class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#b8579a]" />
         </div>
-        
-        <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="confirm-password">Confirm Password</label>
-          <input type="password" id="confirm-password" placeholder="Confirm your password" class="input-field" />
+
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-sm text-[#b8579a] hover:underline">Forgot Password?</a>
         </div>
-  
-        <button class="w-full bg-pink-500 text-white font-bold py-3 rounded-lg transition hover:bg-pink-600">Start My Journey</button>
-        
-        <p class="text-xs text-gray-500 mt-4 text-center">
-          By signing up, you agree to our <a href="#" class="text-pink-600 underline">Terms of Service</a> and <a href="#" class="text-pink-600 underline">Privacy Policy</a>.
-        </p>
+
+        <button type="submit" 
+                class="w-full bg-[#d78ab3] text-white font-bold py-3 rounded-lg mt-6 hover:bg-[#c36a99] transition">
+          Log In
+        </button>
       </form>
-  
-      <p class="mt-6 text-gray-600">Already have an account? <NuxtLink to="/login" class="text-pink-600 underline">Log in</NuxtLink></p>
+
+      <p class="mt-6 text-gray-600">
+        Don't have an account? <NuxtLink to="../auth/signup" class="text-[#d78ab3] underline">Sign Up</NuxtLink>
+      </p>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'SignupPage',
-  };
-  </script>
-  
-  <style scoped>
-  .signup-container {
-    background-color: #f4f0ff;
-  }
-  .header-text h1 {
-    color: #5e3a8d;
-  }
-  .input-field {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 0.375rem;
-  }
-  </style>
-  
+
+    <!-- Right side with animated image -->
+    <div class="hidden lg:block w-1/2 relative">
+      <img src="/assets/hand-drawn-family-reunion-illustration/7570247.jpg" 
+           alt="Supportive community" 
+           class="object-cover h-full w-full rounded-r-lg  " />
+    </div>
+  </div>
+</template>
+
+
+
+<script>
+export default {
+  name: 'LoginPage',
+};
+</script>
