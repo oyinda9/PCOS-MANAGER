@@ -13,6 +13,7 @@
           <h1 class="text-4xl md:text-5xl font-semibold mb-6">Welcome to PCOS Health & Stress Management</h1>
           <p class="text-lg md:text-xl mb-8">
             Manage your PCOS, reduce stress, and improve your overall health with personalized tips and recommendations.
+            <a href="/assets/7570247.jpg"></a>
           </p>
        
           <NuxtLink to="../auth/signup">
