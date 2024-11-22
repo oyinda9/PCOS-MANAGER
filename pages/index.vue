@@ -11,7 +11,7 @@
             <!-- Weight Loss Tracking -->
              <div class="bg-white shadown-xl rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-105">
               <div class="h-48 bg-pink-200 relative">
-                <img src="../assets/stress.jpeg" alt="" class="absolute inset-0 w-full h-full object-cover">
+                <img src="../assets/stress.jpeg" alt="" class="absolute inset-0 w-full h-full object-contain                                              ">
               </div>
               <div class="p-6">
                 <h2 class="text-2xl font-bold text-pink-700 mb-2">Weight loss progress</h2>
