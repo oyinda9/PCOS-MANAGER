@@ -27,12 +27,8 @@
 </template>
 
 <script>
-import NoLayout from '~/layouts/noLayout.vue';
 
-export default {
-  name: 'DashboardLayout',
-  layout: NoLayout, // Exclude this page from the default layout
-};
+
 </script>
 
 <style scoped>

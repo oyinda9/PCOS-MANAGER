@@ -84,7 +84,7 @@
     <Layout class="fixed" />
     <main class="pt-[70px]">
       <div class="container mx-auto py-6">
-        <slot></slot> <!-- Content gets injected here -->
+        <slot/> <!-- Content gets injected here -->
       </div>
     </main>
   
@@ -98,7 +98,7 @@
 <script>
 import Layout from "~/components/Layout.vue";
 export default {
-  name: "DashboardLayout",
+  name: "default",
 };
 </script>
 

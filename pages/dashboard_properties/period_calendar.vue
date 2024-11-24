@@ -5,10 +5,11 @@
     </div>
 </template>
 
-<script setup lang="ts">
-
+<script>
+    definePageMeta({
+    layout:'dashboard-properties'
+})
 </script>
-
 <style scoped>
 
 </style>
