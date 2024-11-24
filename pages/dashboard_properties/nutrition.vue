@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>period  calendar</h1>
+        <h1>NUTRITION</h1>
 
     </div>
 </template>

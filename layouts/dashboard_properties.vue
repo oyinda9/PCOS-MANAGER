@@ -1,10 +1,9 @@
 <template>
   <div>
-    
-    <header>
-      <div
-        class="bg-[#F5F5F5] px-2 py-4 h-[70px] flex items-center justify-between"
-      >
+    <header
+      class="fixed top-0 left-0 right-0 bg-[#F5F5F5] px-4 py-4 h-[70px] z-10 shadow-md"
+    >
+      <div class="flex items-center justify-between flex-wrap">
         <h1 class="text-pink-600 text-xl font-bold">Balance Dashboard</h1>
 
         <div class="flex items-center mr-12 space-x-4 gap-6">
@@ -78,21 +77,20 @@
         </div>
       </div>
     </header>
-    
- 
-   
-    <Layout class="fixed" />
-    <main class="pt-[70px]">
-      <div class="container mx-auto py-6">
-        <slot/> <!-- Content gets injected here -->
-      </div>
-    </main>
-  
+
+    <Layout class="fixed top-0  pt-[70px] left-0 w-[250px] h-full bg-gray-200" /> <!-- Sidebar -->
+<main class="pt-[70px] ml-[300px]"> <!-- Adjusted margin for gap and sidebar width -->
+  <div class="container mx-auto py-6">
+    <slot/> <!-- Content gets injected here -->
+  </div>
+</main>
+
+
+    <!--   
     <footer class="absolute bottom-0 left-0 w-full flex justify-center items-center py-4">
       @2024 sholanke
-    </footer>
+    </footer> -->
   </div>
-
 </template>
 
 <script>

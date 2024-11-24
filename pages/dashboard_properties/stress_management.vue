@@ -1,7 +1,6 @@
 <template>
     <div>
-        <h1>period  calendar</h1>
-
+<h1>STRESS MANAGEMENT</h1>
     </div>
 </template>
 
@@ -10,6 +9,7 @@
     layout:'dashboard-properties'
 })
 </script>
-<style scoped>
+
+<style lang="scss" scoped>
 
 </style>
