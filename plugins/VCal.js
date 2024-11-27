@@ -1,4 +1,4 @@
-// plugins/v-calendar.js
+plugins/v-calendar.js
 import { defineNuxtPlugin } from '#app';
 import VCalendar from 'v-calendar';
 import 'v-calendar/dist/style.css';
