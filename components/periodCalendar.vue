@@ -1,16 +1,14 @@
 <template>
   <div>
-      <h1>period  calendar</h1>
-      <periodCalendar/>
+    <client-only class="w-full">
+      <!-- <VDatePicker v-model="date" :attributes="attrs" /> -->
+      <VCalendar class="w-[700px]" />
+    </client-only>
   </div>
 </template>
 
-<script>
-import periodCalendar from '~/components/periodCalendar.vue';
-  definePageMeta({
-  layout:'dashboard-properties'
-})
-</script>
-<style scoped>
-
-</style>
+  
+  <script setup>
+  // No additional setup needed for a simple calendar display
+  </script>
+  

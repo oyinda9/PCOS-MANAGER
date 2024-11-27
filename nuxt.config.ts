@@ -14,18 +14,4 @@ export default defineNuxtConfig({
      
     },
   },
-
-  // Add vue-cal plugin correctly
-  plugins: [
-    { src:'./plugins/vue-cal.js', mode: 'client' },  // Include the plugin for vue-cal
-  ],
-  vite: {
-    optimizeDeps: {
-      include: [
-        '@fullcalendar/vue3',
-        '@fullcalendar/core',
-        '@fullcalendar/daygrid',
-      ],
-    },
-  },
 })
