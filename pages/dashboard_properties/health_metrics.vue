@@ -1,6 +1,6 @@
 <template>
     <div>
-<h1>healthp</h1>
+<h1>health</h1>
     </div>
 </template>
 
