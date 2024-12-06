@@ -5,7 +5,7 @@
         <!-- Logo Section -->
         <div class="flex items-center gap-2">
           <!-- Heart Icon -->
-          <Heart />
+          <Heart class="text-pink-400" />
           <NuxtLink to="/" class="font-bold text-xl">Balance</NuxtLink>
         </div>
 
