@@ -30,11 +30,13 @@
             >
           </li>
           <li>
-            <button
+                      <NuxtLink to="./auth/login" 
+
               class="bg-pink-500 rounded-full text-white px-4 py-2 hover:bg-pink-700 transition"
             >
+          
               Get Started
-            </button>
+            </NuxtLink>
           </li>
         </ul>
       </nav>
@@ -213,7 +215,7 @@
   </div>
 </section>
 <!-- Footer Section -->
-<footer class="bg-white text-pink-500 mt-5 py-6">
+<footer class="bg-pink-400 text-white mt-5 py-4">
   <div class="text-center space-y-2">
     <div class="font-bold text-2xl flex justify-center items-center space-x-2">
       <!-- Heart Icon -->

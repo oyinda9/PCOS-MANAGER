@@ -67,29 +67,7 @@
               >Period calendar</NuxtLink
             >
           </li>
-          <li>
-            <NuxtLink
-              to="/dashboard_properties/health_metrics"
-              class="py-4 px-2 font-medium hover:bg-pink-200 hover:text-pink-700 hover:border rounded-lg flex items-center space-x-2 gap-4"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-activity"
-              >
-                <path
-                  d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
-                /></svg
-              >Health metrics</NuxtLink
-            >
-          </li>
+        
           <li>
             <NuxtLink
               to="/dashboard_properties/weight_tracking"
@@ -177,30 +155,7 @@
               >Nutrition</NuxtLink
             >
           </li>
-          <li>
-            <NuxtLink
-              to="/dashboard_properties/sleep_tracker"
-              class="py-4 px-2 font-medium hover:bg-pink-200 hover:text-pink-700 hover:border rounded-lg flex items-center space-x-2 gap-4"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-bed-double"
-              >
-                <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" />
-                <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
-                <path d="M12 4v6" />
-                <path d="M2 18h20" /></svg
-              >Sleep Tracking</NuxtLink
-            >
-          </li>
+          
           <li>
             <NuxtLink
               to="/dashboard_properties/community"

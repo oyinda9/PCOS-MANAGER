@@ -37,9 +37,9 @@
 
     <!-- Right side with animated image -->
     <div class="hidden lg:block w-1/2 relative">
-      <!-- <img src="/assets/hand-drawn-family-reunion-illustration/7570247.jpg" 
+      <img src="/assets/female-reproductive-system-concept/4301429.jpg" 
            alt="Supportive community" 
-           class="object-cover h-full w-full rounded-r-lg  " /> -->
+           class="object-cover h-full w-full rounded-r-lg  " />
     </div>
   </div>
 </template>
