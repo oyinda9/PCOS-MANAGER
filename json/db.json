@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "c148",
+      "name": "adun",
+      "email": "adun@gmail.com",
+      "password": "adun",
+      "confirmPassword": "adun"
+    },
+    {
+      "id": "e121",
+      "name": "Precious Sholanke",
+      "email": "sholankeprecious3@gmail.com",
+      "password": "precious",
+      "confirmPassword": "precious"
+    }
+  ]
+}

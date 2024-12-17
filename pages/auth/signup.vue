@@ -36,72 +36,28 @@
         </p>
       </div>
 
-      <form class="w-full max-w-md bg-white shadow-lg p-6 rounded-lg mt-8">
+      <form class="w-full max-w-md bg-white shadow-lg p-6 rounded-lg mt-8" @submit.prevent="handleSubmit">
         <div class="mb-4">
-          <label
-            class="block text-[#6d4c57] text-sm font-bold mb-2"
-            for="full-name"
-            >Full Name</label
-          >
-          <input
-            type="text"
-            id="full-name"
-            placeholder="Enter your full name"
-            class="w-full p-3 border border-gray-300 rounded-md"
-          />
+          <label class="block text-[#6d4c57] text-sm font-bold mb-2" for="full-name">Full Name</label>
+          <input type="text" id="full-name" v-model="name" placeholder="Enter your full name" class="w-full p-3 border border-gray-300 rounded-md"/>
         </div>
 
         <div class="mb-4">
-          <label class="block text-[#6d4c57] text-sm font-bold mb-2" for="email"
-            >Email Address</label
-          >
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter your email"
-            class="w-full p-3 border border-gray-300 rounded-md"
-          />
+          <label class="block text-[#6d4c57] text-sm font-bold mb-2" for="email">Email Address</label>
+          <input type="email" id="email" v-model="email" placeholder="Enter your email" class="w-full p-3 border border-gray-300 rounded-md"/>
         </div>
 
         <div class="mb-4">
-          <label
-            class="block text-[#6d4c57] text-sm font-bold mb-2"
-            for="password"
-            >Password</label
-          >
-          <input
-            type="password"
-            id="password"
-            placeholder="Create a password"
-            class="w-full p-3 border border-gray-300 rounded-md"
-          />
+          <label class="block text-[#6d4c57] text-sm font-bold mb-2" for="password">Password</label>
+          <input type="password" id="password" v-model="password" placeholder="Create a password" class="w-full p-3 border border-gray-300 rounded-md"/>
         </div>
 
         <div class="mb-6">
-          <label
-            class="block text-[#6d4c57] text-sm font-bold mb-2"
-            for="confirm-password"
-            >Confirm Password</label
-          >
-          <input
-            type="password"
-            id="confirm-password"
-            placeholder="Confirm your password"
-            class="w-full p-3 border border-gray-300 rounded-md"
-          />
+          <label class="block text-[#6d4c57] text-sm font-bold mb-2" for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" v-model="confirmPassword" placeholder="Confirm your password" class="w-full p-3 border border-gray-300 rounded-md"/>
         </div>
 
-        <button
-          class="w-full bg-[#e75480] text-white font-bold py-3 rounded-lg transition hover:bg-[#d43a6a]"
-        >
-          Start My Journey
-        </button>
-
-        <p class="text-xs text-gray-500 mt-4 text-center">
-          By signing up, you agree to our
-          <a href="#" class="text-[#e75480] underline">Terms of Service</a> and
-          <a href="#" class="text-[#e75480] underline">Privacy Policy</a>.
-        </p>
+        <button type="submit" class="w-full bg-[#e75480] text-white font-bold py-3 rounded-lg transition hover:bg-[#d43a6a]">Start My Journey</button>
       </form>
 
       <p class="mt-6 text-[#6d4c57]">
@@ -115,7 +71,55 @@
 </template>
 
 <script>
+import { ref } from "vue";
+import axios from "axios";
+
+// Define your form data as refs
+const name = ref("");
+const email = ref("");
+const password = ref("");
+const confirmPassword = ref("");
+
+// Function to handle form submission
+const handleSubmit = async () => {
+  // Basic validation to check if passwords match
+  if (password.value !== confirmPassword.value) {
+    alert("Passwords do not match!");
+    return;
+  }
+
+  // Create user data to send to JSON Server
+  const user = {
+    name: name.value,
+    email: email.value,
+    password: password.value,
+    confirmPassword:confirmPassword.value ,
+  };
+
+  try {
+    // Send POST request to the local JSON server to add the user
+    const response = await axios.post("http://localhost:5000/users", user);
+
+    // Check if the response status is 201 (Created)
+    if (response.status === 201) {
+      alert("Registration successful!");
+      window.location.href = "../auth/login"; // Redirect to the login page
+    }
+  } catch (error) {
+    console.error("Error registering user:", error);
+    alert("Registration failed. Please try again.");
+  }
+};
+
 export default {
-  name: "SignupPage",
+  setup() {
+    return {
+      name,
+      email,
+      password,
+      confirmPassword,
+      handleSubmit,
+    };
+  },
 };
 </script>

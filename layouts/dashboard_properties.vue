@@ -56,6 +56,7 @@
             <div
               class="h-8 w-8 rounded-full bg-pink-300 flex items-center justify-center hover:bg-pink-500 hover:text-white font-bold transition-colors duration-300 ease-in-out"
             >
+            <NuxtLink  to="/dashboard_properties/profile">
               <svg
                 width="24"
                 height="24"
@@ -72,6 +73,8 @@
                   fill="#F472B6"
                 />
               </svg>
+            </NuxtLink>
+             
             </div>
           </button>
         </div>
