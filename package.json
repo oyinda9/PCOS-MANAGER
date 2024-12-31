@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "concurrently \"pnpm --filter json  start\" \"nuxt dev\"",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -27,17 +27,20 @@
     "json": "^11.0.0",
     "lucide-vue": "^0.462.0",
     "lucide-vue-next": "^0.468.0",
+    "notiflix": "^3.2.7",
     "nuxt": "^3.14.1592",
     "server": "^1.0.41",
     "v-calendar": "^3.1.2",
     "vue": "latest",
     "vue-cal": "^4.10.0",
+    "vue-chartjs": "^5.3.2",
     "vue-router": "latest",
     "vue-simple-calendar": "^7.1.0",
     "vue3-calendar": "^0.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16"
   }

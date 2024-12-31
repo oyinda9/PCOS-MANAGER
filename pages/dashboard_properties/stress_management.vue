@@ -1,15 +1,6 @@
 <template>
-  <div class="min-h-screen w-fit">
-    <!-- Decorative elements -->
-    <div
-      class="absolute top-0 left-0 w-32 h-32 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
-    ></div>
-    <div
-      class="absolute top-0 right-0 w-32 h-32 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"
-    ></div>
-    <div
-      class="absolute bottom-0 left-0 w-32 h-32 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"
-    ></div>
+  <div class="min-h-screen w-[1200px]">
+   
 
     <div class="container mx-auto py-10">
       <!-- Page Header -->
@@ -21,7 +12,7 @@
         </p>
       </header>
       <div
-        class="absolute top-0 left-0 w-32 h-32 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
+        class="absolute top-0 left-0 w-32 h-32 rounded-full mix-blend-multiply filter blur-xl opacity-70"
       ></div>
       <!-- Stress Level Logging Form -->
       <section
@@ -75,7 +66,7 @@
           </button>
         </form>
         <div
-          class="absolute top-0 right-0 w-32 h-32 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"
+          class="absolute top-0 right-0 w-32 h-32  rounded-full mix-blend-multiply filter blur-xl opacity-70 "
         ></div>
       </section>
 
@@ -84,7 +75,7 @@
         class="mb-12 bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg p-6"
       >
         <div
-          class="absolute bottom-0 left-0 w-32 h-32 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"
+          class="absolute bottom-0 left-0 w-32"
         ></div>
         <h2 class="text-2xl font-semibold text-pink-600 mb-4">
           Stress Level Chart
@@ -120,7 +111,7 @@
         </ul>
       </section>
       <div
-        class="absolute bottom-0 left-0 w-32 h-32 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"
+        class="absolute bottom-0 left-0 w-32 h-32 filter blur-xl opacity-70  animation-delay-4000"
       ></div>
     </div>
   </div>
@@ -128,13 +119,14 @@
 
 <script setup>
 import { ref, onMounted, watch } from "vue";
+import axios from 'axios'; 
 import {
   Chart,
   LineController,
   LineElement,
   PointElement,
   LinearScale,
-  CategoryScale, // Import for X-axis
+  CategoryScale, 
   Title,
   Tooltip,
   Legend,
@@ -160,7 +152,7 @@ const recentEntries = ref([]); // For the last 5 entries
 let stressChart = null; // Chart instance
 
 // Method: Log Stress Level
-const logStressLevel = () => {
+const logStressLevel = async () => {
   if (!newStressLevel.value) {
     alert("Please select a stress level.");
     return;
@@ -188,6 +180,9 @@ const logStressLevel = () => {
 
   // Update the chart
   updateChart();
+
+  // Send the stress levels to the backend
+  await sendStressDataToBackend();
 };
 
 // Method: Format Date
@@ -212,6 +207,18 @@ const updateChart = () => {
       (entry) => entry.level
     );
     stressChart.update();
+  }
+};
+
+// Method to send stress data to the backend
+const sendStressDataToBackend = async () => {
+  try {
+    const response = await axios.post('http://localhost:5000/stress_management', {
+      stress_management: stressLevels.value
+    });
+    console.log("Data sent to backend:", response.data);
+  } catch (error) {
+    console.error("Error sending data to backend:", error);
   }
 };
 
@@ -259,11 +266,13 @@ onMounted(() => {
 
 // Watch for changes in stressLevels and update the chart
 watch(stressLevels, updateChart, { deep: true });
+
 // Set page metadata
 definePageMeta({
   layout: "dashboard-properties",
 });
 </script>
+
 
 <style scoped>
 @keyframes blob {

@@ -73,7 +73,7 @@
 <script>
 import { ref } from "vue";
 import axios from "axios";
-
+import Notiflix from 'notiflix';
 // Define your form data as refs
 const name = ref("");
 const email = ref("");
@@ -84,7 +84,7 @@ const confirmPassword = ref("");
 const handleSubmit = async () => {
   // Basic validation to check if passwords match
   if (password.value !== confirmPassword.value) {
-    alert("Passwords do not match!");
+    Notiflix.Notify.failure("Passwords do not match!");
     return;
   }
 
@@ -93,23 +93,39 @@ const handleSubmit = async () => {
     name: name.value,
     email: email.value,
     password: password.value,
-    confirmPassword:confirmPassword.value ,
+    confirmPassword: confirmPassword.value,
   };
 
   try {
+    // Show loading spinner while the registration request is being processed
+    Notiflix.Loading.standard("Registering...");
+
     // Send POST request to the local JSON server to add the user
     const response = await axios.post("http://localhost:5000/users", user);
 
     // Check if the response status is 201 (Created)
     if (response.status === 201) {
-      alert("Registration successful!");
-      window.location.href = "../auth/login"; // Redirect to the login page
+      // Stop loading spinner
+      Notiflix.Loading.remove();
+
+      // Notify success
+      Notiflix.Notify.success("Registration successful!");
+
+      // Redirect to the login page
+      window.location.href = "../auth/login";
     }
   } catch (error) {
+    // Stop loading spinner
+    Notiflix.Loading.remove();
+
+    // Log the error to the console
     console.error("Error registering user:", error);
-    alert("Registration failed. Please try again.");
+
+    // Notify failure
+    Notiflix.Notify.failure("Registration failed. Please try again.");
   }
 };
+
 
 export default {
   setup() {

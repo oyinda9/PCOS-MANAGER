@@ -1,10 +1,14 @@
 <template>
-  <div>
+  <div class="bg-pink-50">
     <header
-      class="fixed top-0 left-0 right-0 bg-[#F5F5F5] px-4 py-4 h-[70px] z-10 shadow-md"
+      class="fixed top-0 left-0 right-0 bg-white px-4 py-4 h-[70px] z-10 shadow-md"
     >
       <div class="flex items-center justify-between flex-wrap">
-        <h1 class="text-pink-600 text-xl font-bold">Balance Dashboard</h1>
+        <h1
+          class="text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent"
+        >
+          Balance Dashboard
+        </h1>
 
         <div class="flex items-center mr-12 space-x-4 gap-6">
           <!-- Settings Icon -->
@@ -51,12 +55,12 @@
           </button>
           <!-- Profile Icon -->
           <button
+            @click="showModal"
             class="transition-transform duration-300 ease-in-out transform hover:scale-110"
           >
             <div
               class="h-8 w-8 rounded-full bg-pink-300 flex items-center justify-center hover:bg-pink-500 hover:text-white font-bold transition-colors duration-300 ease-in-out"
             >
-            <NuxtLink  to="/dashboard_properties/profile">
               <svg
                 width="24"
                 height="24"
@@ -73,21 +77,24 @@
                   fill="#F472B6"
                 />
               </svg>
-            </NuxtLink>
-             
             </div>
           </button>
+
+          <!-- Conditionally rendered Profile Modal -->
+          <profile v-if="openProfileModal" />
         </div>
       </div>
     </header>
 
-    <Layout class="fixed top-0  pt-[70px] left-0 w-[250px] h-full bg-gray-200" /> <!-- Sidebar -->
-<main class="pt-[70px] ml-[300px]"> <!-- Adjusted margin for gap and sidebar width -->
-  <div class="container mx-auto py-6">
-    <slot/> <!-- Content gets injected here -->
-  </div>
-</main>
-
+    <Layout class="fixed top-0 pt-[70px] left-0 w-[250px] h-full bg-gray-200" />
+    <!-- Sidebar -->
+    <main class="pt-[70px] ml-[300px]">
+      <!-- Adjusted margin for gap and sidebar width -->
+      <div class="container mx-auto py-6">
+        <slot />
+        <!-- Content gets injected here -->
+      </div>
+    </main>
 
     <!--   
     <footer class="absolute bottom-0 left-0 w-full flex justify-center items-center py-4">
@@ -96,10 +103,14 @@
   </div>
 </template>
 
-<script>
+<script lang="ts" setup>
 import Layout from "~/components/Layout.vue";
-export default {
-  name: "default",
+import profile from "~/components/profile.vue";
+
+// Reference to control modal visibility
+const openProfileModal = ref(false);
+const showModal = () => {
+  openProfileModal.value = !openProfileModal.value;
 };
 </script>
 

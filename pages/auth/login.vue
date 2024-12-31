@@ -10,7 +10,7 @@
       <div
         class="absolute inset-0 bg-[#933a6d] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
       >
-        <span class="text-white text-2xl font-semibold">
+        <span class="text-white text-2xl font-semibold px-5">
           Empowering Peace and Balance: Supporting Your PCOS Journey
         </span>
       </div>
@@ -45,21 +45,32 @@
           />
         </div>
 
-        <div class="mb-4">
-          <label
-            class="block text-[#6d4c57] text-sm font-bold mb-2"
-            for="password"
-            >Password</label
-          >
-          <input
-            type="password"
-            id="password"
-            v-model="password"
-            placeholder="Enter your password"
-            class="w-full p-3 border border-gray-300 rounded-md"
-          />
-        </div>
-
+        <div class="mb-4 relative">
+    <label
+      class="block text-[#6d4c57] text-sm font-bold mb-2"
+      for="password"
+    >
+      Password
+    </label>
+    <input
+      :type="showPassword ? 'text' : 'password'"
+      id="password"
+      v-model="password"
+      placeholder="Enter your password"
+      class="w-full p-3 border border-gray-300 rounded-md"
+    />
+    <!-- Eye Icon -->
+    <button
+      type="button"
+      @click="togglePassword"
+      class="absolute inset-y-0 right-3 mt-6 flex items-center text-gray-500"
+    >
+      <component
+        :is="showPassword ? Eye :   EyeOff"
+        class="h-5 w-5"
+      />
+    </button>
+  </div>
         <button
           type="submit"
           class="w-full bg-[#e75480] text-white font-bold py-3 rounded-lg transition hover:bg-[#d43a6a]"
@@ -81,43 +92,63 @@
 <script setup>
 import { ref } from "vue";
 import axios from "axios";
-
+import Notiflix from "notiflix";
+import { Eye, EyeOff } from "lucide-vue-next";
 const email = ref("");
 const password = ref("");
 
+  const   showPassword =ref (false);
+  const togglePassword =()=>{
+    showPassword.value=!showPassword.value
+  } 
 // Handle the login form submission
 const handleLogin = async () => {
   // Basic validation
   if (!email.value || !password.value) {
-    alert("Please fill in both fields!");
+    Notiflix.Notify.warning("Please fill in both fields!");
     return;
   }
 
   try {
+    // Show loading spinner before the request
+    Notiflix.Loading.standard("Authenticating...");
+
     // Fetch users from the JSON Server (simulating a login)
     const response = await axios.get("http://localhost:5000/users");
 
+    // Find the user based on email and password
     const user = response.data.find(
       (user) => user.email === email.value && user.password === password.value
     );
 
+    // Simulate a delay (optional, for visual effect)
+    await new Promise((resolve) => setTimeout(resolve, 1000)); // Optional: 1 second delay
+
     if (user) {
-      alert("Login successful!");
-      // Redirect to the dashboard or main page
-      window.location.href = "../dashboard_properties/dashboard"; // Adjust the route accordingly
+      // Stop loading spinner
+      Notiflix.Loading.remove();
+
+      // Notify success
+      Notiflix.Notify.success("Login Successful!");
+
+      // Save user info in local storage
       localStorage.setItem("loggedInUser", JSON.stringify(user));
+
+      // Redirect to the dashboard
+      window.location.href = "../dashboard_properties/dashboard"; // Adjust the route accordingly
     } else {
-      alert("Invalid credentials. Please try again.");
+      // Stop loading spinner
+      Notiflix.Loading.remove();
+
+      // Notify invalid credentials
+      Notiflix.Notify.failure("Invalid credentials. Please try again.");
     }
   } catch (error) {
-    console.error("Error logging in:", error);
-    alert("An error occurred. Please try again later.");
-  }
-};
+    // Stop loading spinner
+    Notiflix.Loading.remove();
 
-return {
-  email,
-  password,
-  handleLogin,
+    console.error("Error logging in:", error);
+    Notiflix.Notify.failure("An error occurred. Please try again later.");
+  }
 };
 </script>

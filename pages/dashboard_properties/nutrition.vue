@@ -1,12 +1,12 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-pink-50 to-purple-200 p-6 max-w-full">
+  <div class="min-h-screen p-6 max-w-full">
     <h1 class="text-4xl font-bold text-pink-800 mb-10 text-center">
       Nutrition for PCOS Management
     </h1>
 
     <!-- Personal Assessment Section -->
     <section
-      class="mb-12 bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+      class="mb-12 bg-white rounded-lg shadow-lg p-8"
     >
       <h2 class="text-2xl font-semibold text-pink-700 mb-6 flex items-center">
         <UserIcon class="mr-2 w-6 h-6" />
@@ -140,7 +140,7 @@
     <!-- Personalized Healthy Videos Section -->
     <section
       v-if="personalizedVideos.length > 0"
-      class="mb-12 bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+      class="mb-12 bg-white rounded-lg shadow-lg p-8 "
     >
       <h2 class="text-2xl font-semibold text-pink-700 mb-6 flex items-center">
         <VideoIcon class="mr-2 w-6 h-6" />

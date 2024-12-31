@@ -13,6 +13,709 @@
       "email": "sholankeprecious3@gmail.com",
       "password": "precious",
       "confirmPassword": "precious"
+    },
+    {
+      "id": "4766",
+      "name": "nifemi sholanke",
+      "email": "niffy@gmail.com",
+      "password": "1234",
+      "confirmPassword": "1234"
+    },
+    {
+      "id": "6748",
+      "name": "eni",
+      "email": "eni@gmail.com",
+      "password": "pass",
+      "confirmPassword": "pass"
+    }
+  ],
+  "funFact": [
+    {
+      "id": "1",
+      "title": "Laughter boosts your immune system by increasing infection-fighting antibodies."
+    },
+    {
+      "id": "2",
+      "title": "Drinking water can increase your metabolism by 24–30%."
+    },
+    {
+      "id": "3",
+      "title": "Chewing gum can improve focus and memory."
+    },
+    {
+      "id": "4",
+      "title": "Walking just 20 minutes a day can reduce the risk of heart disease by 30%."
+    },
+    {
+      "id": "5",
+      "title": "Sleeping less than 6 hours per night increases your risk of obesity."
+    },
+    {
+      "id": "6",
+      "title": "Your body is about 60% water."
+    },
+    {
+      "id": "7",
+      "title": "Regular exercise can add up to 5 years to your life."
+    },
+    {
+      "id": "8",
+      "title": "The human brain uses about 20% of your daily calories."
+    },
+    {
+      "id": "9",
+      "title": "Eating an apple is a better energy booster than coffee."
+    },
+    {
+      "id": "10",
+      "title": "Sitting for long hours can increase your risk of premature death by 50%."
+    },
+    {
+      "id": "11",
+      "title": "A healthy diet can prevent about 70% of chronic diseases."
+    },
+    {
+      "id": "12",
+      "title": "Broccoli contains more protein per calorie than steak."
+    },
+    {
+      "id": "13",
+      "title": "Dark chocolate is good for your heart and can improve your mood."
+    },
+    {
+      "id": "14",
+      "title": "Eating spicy food may help you live longer."
+    },
+    {
+      "id": "15",
+      "title": "Good posture can improve your breathing and digestion."
+    },
+    {
+      "id": "16",
+      "title": "Chronic stress can shrink your brain."
+    },
+    {
+      "id": "17",
+      "title": "Eating breakfast improves concentration and energy levels."
+    },
+    {
+      "id": "18",
+      "title": "Cold showers can boost circulation and immunity."
+    },
+    {
+      "id": "19",
+      "title": "The body burns calories even while you're sleeping."
+    },
+    {
+      "id": "20",
+      "title": "Smiling releases endorphins, which make you feel happier."
+    },
+    {
+      "id": "21",
+      "title": "The heart beats about 100,000 times per day."
+    },
+    {
+      "id": "22",
+      "title": "Your skin renews itself every 28 days."
+    },
+    {
+      "id": "23",
+      "title": "Regular yoga can improve flexibility and reduce stress."
+    },
+    {
+      "id": "24",
+      "title": "Avocados are one of the healthiest fruits, packed with good fats."
+    },
+    {
+      "id": "25",
+      "title": "Bananas can help reduce muscle cramps after exercise."
+    },
+    {
+      "id": "26",
+      "title": "Listening to music can lower blood pressure and reduce stress."
+    },
+    {
+      "id": "27",
+      "title": "Vitamin D from sunlight boosts your mood and strengthens your bones."
+    },
+    {
+      "id": "28",
+      "title": "Your lungs can hold up to six liters of air."
+    },
+    {
+      "id": "29",
+      "title": "Stretching increases blood flow and reduces muscle tension."
+    },
+    {
+      "id": "30",
+      "title": "Carrots can help improve your vision due to their high vitamin A content."
+    }
+  ],
+  "weight_tracker": [
+    {
+      "id": "1734945622042",
+      "weight": 67,
+      "date": "2024-12-16T00:00:00.000Z"
+    },
+    {
+      "id": "1734946365292",
+      "weight": 45,
+      "date": "2024-12-23T00:00:00.000Z",
+      "mood": "Not specified",
+      "energyLevel": "8",
+      "funFact": "Did you know? Drinking water can boost metabolism!",
+      "dailyChallenge": "Challenge of the day: Drink 2 liters of water today!",
+      "moodRecommendation": "No recommendation"
+    },
+    {
+      "id": "1734946512903",
+      "weight": 67,
+      "date": "2024-12-23T00:00:00.000Z",
+      "mood": "😴",
+      "energyLevel": "6",
+      "funFact": "Did you know? Drinking water can boost metabolism!",
+      "dailyChallenge": "Challenge of the day: Drink 2 liters of water today!",
+      "moodRecommendation": "Feeling a bit tired? A good rest is key to staying on track!"
+    },
+    {
+      "id": "1734978427027",
+      "weight": 67,
+      "date": "2024-12-23T00:00:00.000Z",
+      "mood": "😊",
+      "energyLevel": "6",
+      "funFact": {
+        "id": "26",
+        "title": "Listening to music can lower blood pressure and reduce stress."
+      },
+      "dailyChallenge": "",
+      "moodRecommendation": "You're feeling happy! Keep up the great work!"
+    }
+  ],
+  "stress_management": [
+    {
+      "id": "c5e0",
+      "stress_management": [
+        {
+          "level": 7,
+          "notes": "stress",
+          "date": "2024-12-23T11:32:11.885Z"
+        }
+      ]
+    },
+    {
+      "id": "7217",
+      "stress_management": [
+        {
+          "level": 7,
+          "notes": "",
+          "date": "2024-12-23T11:35:47.200Z"
+        }
+      ]
+    },
+    {
+      "id": "9da9",
+      "stress_management": [
+        {
+          "level": 7,
+          "notes": "",
+          "date": "2024-12-23T11:35:47.200Z"
+        },
+        {
+          "level": 8,
+          "notes": "",
+          "date": "2024-12-23T11:35:51.849Z"
+        }
+      ]
+    },
+    {
+      "id": "7cb2",
+      "stress_management": [
+        {
+          "level": 7,
+          "notes": "",
+          "date": "2024-12-23T11:35:47.200Z"
+        },
+        {
+          "level": 8,
+          "notes": "",
+          "date": "2024-12-23T11:35:51.849Z"
+        },
+        {
+          "level": 10,
+          "notes": "",
+          "date": "2024-12-23T11:35:59.863Z"
+        }
+      ]
+    },
+    {
+      "id": "9467",
+      "stress_management": [
+        {
+          "level": 7,
+          "notes": "",
+          "date": "2024-12-23T11:35:47.200Z"
+        },
+        {
+          "level": 8,
+          "notes": "",
+          "date": "2024-12-23T11:35:51.849Z"
+        },
+        {
+          "level": 10,
+          "notes": "",
+          "date": "2024-12-23T11:35:59.863Z"
+        },
+        {
+          "level": 2,
+          "notes": "",
+          "date": "2024-12-23T11:36:07.401Z"
+        }
+      ]
+    },
+    {
+      "id": "f374",
+      "stress_management": [
+        {
+          "level": 7,
+          "notes": "",
+          "date": "2024-12-23T11:35:47.200Z"
+        },
+        {
+          "level": 8,
+          "notes": "",
+          "date": "2024-12-23T11:35:51.849Z"
+        },
+        {
+          "level": 10,
+          "notes": "",
+          "date": "2024-12-23T11:35:59.863Z"
+        },
+        {
+          "level": 2,
+          "notes": "",
+          "date": "2024-12-23T11:36:07.401Z"
+        },
+        {
+          "level": 9,
+          "notes": "",
+          "date": "2024-12-23T11:41:01.244Z"
+        }
+      ]
+    },
+    {
+      "id": "9742",
+      "stress_management": [
+        {
+          "level": 7,
+          "notes": "",
+          "date": "2024-12-23T18:27:34.312Z"
+        }
+      ]
+    },
+    {
+      "id": "f7ac",
+      "stress_management": [
+        {
+          "level": 7,
+          "notes": "",
+          "date": "2024-12-23T18:27:34.312Z"
+        },
+        {
+          "level": 8,
+          "notes": "",
+          "date": "2024-12-23T18:27:49.490Z"
+        }
+      ]
+    },
+    {
+      "id": "a6ba",
+      "stress_management": [
+        {
+          "level": 7,
+          "notes": "",
+          "date": "2024-12-23T18:27:34.312Z"
+        },
+        {
+          "level": 8,
+          "notes": "",
+          "date": "2024-12-23T18:27:49.490Z"
+        },
+        {
+          "level": 2,
+          "notes": "",
+          "date": "2024-12-23T18:27:56.987Z"
+        }
+      ]
+    }
+  ],
+  "period_logs": [
+    {
+      "id": "cab8",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z"
+      ],
+      "nextPeriod": "Fri Feb 21 2025",
+      "ovulation": "Fri Feb 07 2025"
+    },
+    {
+      "id": "42af",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z"
+      ],
+      "nextPeriod": "Fri Feb 21 2025",
+      "ovulation": "Fri Feb 07 2025"
+    },
+    {
+      "id": "f50b",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z"
+      ],
+      "nextPeriod": "Fri Feb 21 2025",
+      "ovulation": "Fri Feb 07 2025"
+    },
+    {
+      "id": "43d8",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z"
+      ],
+      "nextPeriod": "Fri Feb 21 2025",
+      "ovulation": "Fri Feb 07 2025"
+    },
+    {
+      "id": "0b6e",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z"
+      ],
+      "nextPeriod": "Fri Feb 21 2025",
+      "ovulation": "Fri Feb 07 2025"
+    },
+    {
+      "id": "52e1",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z"
+      ],
+      "nextPeriod": "Fri Feb 21 2025",
+      "ovulation": "Fri Feb 07 2025"
+    },
+    {
+      "id": "b6d5",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z"
+      ],
+      "nextPeriod": "Fri Feb 21 2025",
+      "ovulation": "Fri Feb 07 2025"
+    },
+    {
+      "id": "0864",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z"
+      ],
+      "nextPeriod": "Fri Feb 21 2025",
+      "ovulation": "Fri Feb 07 2025"
+    },
+    {
+      "id": "9ce1",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z"
+      ],
+      "nextPeriod": "Fri Apr 04 2025",
+      "ovulation": "Fri Mar 21 2025"
+    },
+    {
+      "id": "bff5",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z"
+      ],
+      "nextPeriod": "Sat Apr 26 2025",
+      "ovulation": "Sat Apr 12 2025"
+    },
+    {
+      "id": "3544",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z"
+      ],
+      "nextPeriod": "Sat Apr 26 2025",
+      "ovulation": "Sat Apr 12 2025"
+    },
+    {
+      "id": "37b6",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z"
+      ],
+      "nextPeriod": "Sat Apr 26 2025",
+      "ovulation": "Sat Apr 12 2025"
+    },
+    {
+      "id": "c9b4",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z"
+      ],
+      "nextPeriod": "Sat Apr 26 2025",
+      "ovulation": "Sat Apr 12 2025"
+    },
+    {
+      "id": "972b",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z"
+      ],
+      "nextPeriod": "Sat Apr 26 2025",
+      "ovulation": "Sat Apr 12 2025"
+    },
+    {
+      "id": "e3b7",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z"
+      ],
+      "nextPeriod": "Sat Apr 26 2025",
+      "ovulation": "Sat Apr 12 2025"
+    },
+    {
+      "id": "9797",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z"
+      ],
+      "nextPeriod": "Sat Apr 26 2025",
+      "ovulation": "Sat Apr 12 2025"
+    },
+    {
+      "id": "ce28",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z"
+      ],
+      "nextPeriod": "Sat Apr 26 2025",
+      "ovulation": "Sat Apr 12 2025"
+    },
+    {
+      "id": "c7bb",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z"
+      ],
+      "nextPeriod": "Sat Apr 26 2025",
+      "ovulation": "Sat Apr 12 2025"
+    },
+    {
+      "id": "bd13",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z"
+      ],
+      "nextPeriod": "Sat Apr 26 2025",
+      "ovulation": "Sat Apr 12 2025"
+    },
+    {
+      "id": "79ec",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z"
+      ],
+      "nextPeriod": "Sat Apr 26 2025",
+      "ovulation": "Sat Apr 12 2025"
+    },
+    {
+      "id": "9026",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z",
+        "2024-12-08T23:00:00.000Z"
+      ],
+      "nextPeriod": "Mon Jan 06 2025",
+      "ovulation": "Mon Dec 23 2024"
+    },
+    {
+      "id": "cd93",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z",
+        "2024-12-08T23:00:00.000Z"
+      ],
+      "nextPeriod": "Mon Jan 06 2025",
+      "ovulation": "Mon Dec 23 2024"
+    },
+    {
+      "id": "cd72",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z",
+        "2024-12-08T23:00:00.000Z"
+      ],
+      "nextPeriod": "Mon Jan 06 2025",
+      "ovulation": "Mon Dec 23 2024"
+    },
+    {
+      "id": "2adb",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z",
+        "2024-12-08T23:00:00.000Z"
+      ],
+      "nextPeriod": "Mon Jan 06 2025",
+      "ovulation": "Mon Dec 23 2024"
+    },
+    {
+      "id": "dcaa",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z",
+        "2024-12-08T23:00:00.000Z"
+      ],
+      "nextPeriod": "Mon Jan 06 2025",
+      "ovulation": "Mon Dec 23 2024"
+    },
+    {
+      "id": "25aa",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z",
+        "2024-12-08T23:00:00.000Z"
+      ],
+      "nextPeriod": "Mon Jan 06 2025",
+      "ovulation": "Mon Dec 23 2024"
+    },
+    {
+      "id": "e008",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z",
+        "2024-12-08T23:00:00.000Z"
+      ],
+      "nextPeriod": "Mon Jan 06 2025",
+      "ovulation": "Mon Dec 23 2024"
     }
   ]
 }

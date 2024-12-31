@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen bg-gradient-to-br from-pink-100 to-purple-200 p-6">
+    <div class="min-h-screen">
       <div class="container mx-auto py-10">
         <!-- Page Header -->
         <header class="text-center mb-8">
@@ -26,7 +26,7 @@
           <p class="text-lg text-gray-700 mb-4">
             Have a question or want to share your experience? Join the discussion below and connect with others.
           </p>
-          <div class="bg-white p-4 rounded-lg shadow-md">
+          <div class=" p-4 rounded-lg ">
             <textarea v-model="newPost" class="w-full p-4 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" rows="4" placeholder="Share your thoughts..."></textarea>
             <button @click="postMessage" class="mt-4 bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-2 rounded-lg hover:from-pink-600 hover:to-purple-600 transition-colors duration-300">
               Post

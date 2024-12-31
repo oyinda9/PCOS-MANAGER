@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
     <!-- Fixed Sidebar -->
-    <div class="w-64 h-full bg-[#F5F5F5] text-slate-800 fixed left-0">
+    <div class="w-64 h-full bg-white text-slate-800 fixed left-0">
       <div class="p-4">
         <ul class="px-2">
           <li>
@@ -101,7 +101,7 @@
           <li>
             <NuxtLink
               to="/dashboard_properties/stress_management"
-              class="py-4 px-2 font-medium hover:bg-pink-200 hover:text-pink-700 hover:border rounded-lg flex items-center space-x-2 gap-4"
+              class=" text-sm py-4 px-2 font-medium hover:bg-pink-200 hover:text-pink-700 hover:border rounded-lg flex items-center space-x-2 gap-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
