@@ -210,17 +210,24 @@ const updateChart = () => {
   }
 };
 
-// Method to send stress data to the backend
 const sendStressDataToBackend = async () => {
   try {
-    const response = await axios.post('http://localhost:5000/stress_management', {
+    // Get the API URL from the environment variable or fallback to localhost
+    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
+    // Send the POST request to the backend
+    const response = await axios.post(`${apiUrl}/stress_management`, {
       stress_management: stressLevels.value
     });
+
+    // Log the response from the backend
     console.log("Data sent to backend:", response.data);
   } catch (error) {
+    // Handle any errors
     console.error("Error sending data to backend:", error);
   }
 };
+
 
 // Initialize the Chart.js instance
 onMounted(() => {

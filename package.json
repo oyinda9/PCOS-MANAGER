@@ -29,6 +29,7 @@
     "lucide-vue-next": "^0.468.0",
     "notiflix": "^3.2.7",
     "nuxt": "^3.14.1592",
+    "nuxt-app": "link:",
     "server": "^1.0.41",
     "v-calendar": "^3.1.2",
     "vue": "latest",

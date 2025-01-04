@@ -79,7 +79,7 @@ const name = ref("");
 const email = ref("");
 const password = ref("");
 const confirmPassword = ref("");
-
+const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000";  // Default to local if not set
 // Function to handle form submission
 const handleSubmit = async () => {
   // Basic validation to check if passwords match
@@ -101,7 +101,7 @@ const handleSubmit = async () => {
     Notiflix.Loading.standard("Registering...");
 
     // Send POST request to the local JSON server to add the user
-    const response = await axios.post("http://localhost:5000/users", user);
+    const response = await axios.post(`${apiUrl}/users`, user);
 
     // Check if the response status is 201 (Created)
     if (response.status === 201) {

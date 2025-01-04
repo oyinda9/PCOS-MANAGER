@@ -27,6 +27,13 @@
       "email": "eni@gmail.com",
       "password": "pass",
       "confirmPassword": "pass"
+    },
+    {
+      "id": "a41d",
+      "name": "tester",
+      "email": "tester2@gmail.com",
+      "password": "pass",
+      "confirmPassword": "pass"
     }
   ],
   "funFact": [
@@ -191,7 +198,7 @@
       "moodRecommendation": "You're feeling happy! Keep up the great work!"
     },
     {
-      "id": 1735668262063,
+      "id": "1735668262063",
       "weight": 60,
       "date": "2024-12-31T00:00:00.000Z",
       "mood": "😊",

@@ -308,8 +308,6 @@ const fetchChallenges = async () => {
     console.error("Error fetching fun facts:", error);
   }
 };
-
-// Method to add weight entry
 const addWeightEntry = async () => {
   if (!newWeight.value || !newDate.value) return;
 
@@ -325,8 +323,11 @@ const addWeightEntry = async () => {
   };
 
   try {
+    // Get the API URL from the environment variable or fallback to localhost
+    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
     // Send the entry to the JSON server
-    await axios.post("http://localhost:5000/weight_tracker", entry);
+    await axios.post(`${apiUrl}/weight_tracker`, entry);
 
     // Update local entries
     weightEntries.value.push(entry);

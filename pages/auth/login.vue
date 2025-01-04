@@ -114,12 +114,22 @@ const handleLogin = async () => {
     Notiflix.Loading.standard("Authenticating...");
 
     // Fetch users from the JSON Server (simulating a login)
-    const response = await axios.get("http://localhost:5000/users");
+    // const response = await axios.get("http://localhost:5000/users");
+    // const response = await axios.get("/json/db.json");
+    // const users = response.data.users;  // Access the users array from db.json
+    // Get the API URL from the environment variable
+    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
+    // Fetch users from the local JSON Server (replace with your actual endpoint)
+    const response = await axios.get(`${apiUrl}/users`);
+    const users = response.data; // Get the list of users from the response
+
 
     // Find the user based on email and password
-    const user = response.data.find(
-      (user) => user.email === email.value && user.password === password.value
-    );
+  const user = users.find(
+    (user) => user.email === email.value && user.password === password.value
+  );
+
 
     // Simulate a delay (optional, for visual effect)
     await new Promise((resolve) => setTimeout(resolve, 1000)); // Optional: 1 second delay

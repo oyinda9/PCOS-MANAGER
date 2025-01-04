@@ -202,19 +202,26 @@
   });
   
   const sendDataToServer = async () => {
-    try {
-      const response = await axios.post('http://localhost:5000/period_logs', {
-        periodLogs: periods.value,
-        nextPeriod: nextPeriodStart.value,
-        ovulation: ovulationDay.value,
-      });
-  
-      serverMessage.value = response.data.message;
-    } catch (error) {
-      console.error('Error sending data to server:', error);
-      serverMessage.value = 'Error sending data to server';
-    }
-  };
+  try {
+    // Get the API URL from the environment variable or fallback to localhost
+    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
+    // Send the POST request to the API
+    const response = await axios.post(`${apiUrl}/period_logs`, {
+      periodLogs: periods.value,
+      nextPeriod: nextPeriodStart.value,
+      ovulation: ovulationDay.value,
+    });
+
+    // Set the server response message
+    serverMessage.value = response.data.message;
+  } catch (error) {
+    // Handle error
+    console.error("Error sending data to server:", error);
+    serverMessage.value = "Error sending data to server";
+  }
+};
+
   
   // Watch for changes in periods and send data to server
   watch(periods, sendDataToServer);
