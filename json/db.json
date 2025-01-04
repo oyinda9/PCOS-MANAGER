@@ -189,6 +189,19 @@
       },
       "dailyChallenge": "",
       "moodRecommendation": "You're feeling happy! Keep up the great work!"
+    },
+    {
+      "id": 1735668262063,
+      "weight": 60,
+      "date": "2024-12-31T00:00:00.000Z",
+      "mood": "😊",
+      "energyLevel": "7",
+      "funFact": {
+        "id": "4",
+        "title": "Walking just 20 minutes a day can reduce the risk of heart disease by 30%."
+      },
+      "dailyChallenge": "",
+      "moodRecommendation": "You're feeling happy! Keep up the great work!"
     }
   ],
   "stress_management": [
@@ -344,6 +357,31 @@
           "level": 2,
           "notes": "",
           "date": "2024-12-23T18:27:56.987Z"
+        }
+      ]
+    },
+    {
+      "id": "9b47",
+      "stress_management": [
+        {
+          "level": 7,
+          "notes": "",
+          "date": "2024-12-31T18:05:13.129Z"
+        }
+      ]
+    },
+    {
+      "id": "4758",
+      "stress_management": [
+        {
+          "level": 7,
+          "notes": "",
+          "date": "2024-12-31T18:05:13.129Z"
+        },
+        {
+          "level": 8,
+          "notes": "",
+          "date": "2024-12-31T18:05:18.145Z"
         }
       ]
     }
@@ -704,6 +742,36 @@
     },
     {
       "id": "e008",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z",
+        "2024-12-08T23:00:00.000Z"
+      ],
+      "nextPeriod": "Mon Jan 06 2025",
+      "ovulation": "Mon Dec 23 2024"
+    },
+    {
+      "id": "713f",
+      "periodLogs": [
+        "2024-12-06T23:00:00.000Z",
+        "2024-12-17T00:00:00.000Z",
+        "2024-12-22T23:00:00.000Z",
+        "2024-12-27T00:00:00.000Z",
+        "2025-01-23T23:00:00.000Z",
+        "2025-03-06T23:00:00.000Z",
+        "2025-03-28T23:00:00.000Z",
+        "2024-12-08T23:00:00.000Z"
+      ],
+      "nextPeriod": "Mon Jan 06 2025",
+      "ovulation": "Mon Dec 23 2024"
+    },
+    {
+      "id": "b46f",
       "periodLogs": [
         "2024-12-06T23:00:00.000Z",
         "2024-12-17T00:00:00.000Z",
