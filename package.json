@@ -3,8 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "start:json-server": "cd public/json && pnpm start",
+    "start": "json-server --watch db.json --port 5000",
     "build": "nuxt build",
-    "dev": "concurrently \"pnpm --filter json  start\" \"nuxt dev\"",
+    "dev": "concurrently \"pnpm nuxt dev\" \"pnpm start:json-server\"",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
