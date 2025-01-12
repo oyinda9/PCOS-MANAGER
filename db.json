@@ -41,6 +41,13 @@
       "email": "tester3@gmail.com",
       "password": "pass",
       "confirmPassword": "pass"
+    },
+    {
+      "id": "6dc3",
+      "name": "test3",
+      "email": "test3@gmail.com",
+      "password": "1234",
+      "confirmPassword": "1234"
     }
   ],
   "funFact": [

@@ -79,7 +79,7 @@ const name = ref("");
 const email = ref("");
 const password = ref("");
 const confirmPassword = ref("");
-const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000";  // Default to local if not set
+const apiUrl = import.meta.env.VITE_API_URL ;  
 // Function to handle form submission
 const handleSubmit = async () => {
   // Basic validation to check if passwords match
