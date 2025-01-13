@@ -73,59 +73,60 @@
 <script>
 import { ref } from "vue";
 import axios from "axios";
-import Notiflix from 'notiflix';
-// Define your form data as refs
+import Notiflix from "notiflix";
+
 const name = ref("");
 const email = ref("");
 const password = ref("");
 const confirmPassword = ref("");
-const apiUrl = import.meta.env.VITE_API_URL ;  
-// Function to handle form submission
+const localApiUrl = "http://localhost:5000/users";
+const hostedApiUrl = import.meta.env.VITE_REMOTE_API_URL + "/users"; // Hosted server URL
+
 const handleSubmit = async () => {
-  // Basic validation to check if passwords match
   if (password.value !== confirmPassword.value) {
     Notiflix.Notify.failure("Passwords do not match!");
     return;
   }
 
-  // Create user data to send to JSON Server
+  // Create user data with proper structure
   const user = {
-    name: name.value,
-    email: email.value,
-    password: password.value,
-    confirmPassword: confirmPassword.value,
+    userInfo: {
+      name: name.value,
+      email: email.value,
+      password: password.value,
+      confirmPassword: confirmPassword.value,
+    },
+    healthData: {
+      weightTracker: [],
+      stressManagement: [],
+      periodLogs: [],
+      nextPeriod: "",
+      ovulation: "",
+    },
   };
 
   try {
-    // Show loading spinner while the registration request is being processed
     Notiflix.Loading.standard("Registering...");
 
-    // Send POST request to the local JSON server to add the user
-    const response = await axios.post(`${apiUrl}/users`, user);
+    // Send data to both servers
+    const [localResponse, hostedResponse] = await Promise.all([
+      axios.post(localApiUrl, user), // Local server
+      axios.post(hostedApiUrl, user), // Hosted server
+    ]);
 
-    // Check if the response status is 201 (Created)
-    if (response.status === 201) {
-      // Stop loading spinner
+    if (localResponse.status === 201 && hostedResponse.status === 201) {
       Notiflix.Loading.remove();
-
-      // Notify success
       Notiflix.Notify.success("Registration successful!");
 
-      // Redirect to the login page
-      window.location.href = "../auth/login";
+      // Redirect using Vue Router if available
+      window.location.href = "/auth/login"; // Update path if necessary
     }
   } catch (error) {
-    // Stop loading spinner
     Notiflix.Loading.remove();
-
-    // Log the error to the console
     console.error("Error registering user:", error);
-
-    // Notify failure
     Notiflix.Notify.failure("Registration failed. Please try again.");
   }
 };
-
 
 export default {
   setup() {

@@ -48,6 +48,278 @@
       "email": "test3@gmail.com",
       "password": "1234",
       "confirmPassword": "1234"
+    },
+    {
+      "id": "e79c",
+      "userInfo": {
+        "name": "dera",
+        "email": "dera@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "51e7",
+      "userInfo": {
+        "name": "pp",
+        "email": "pp@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "997d",
+      "userInfo": {
+        "name": "test4",
+        "email": "tester4@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "4572",
+      "userInfo": {
+        "name": "test4",
+        "email": "tester4@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "120b",
+      "userInfo": {
+        "name": "test4",
+        "email": "tester4@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "9b4a",
+      "userInfo": {
+        "name": "ppp",
+        "email": "bvdsbv@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "e213",
+      "userInfo": {
+        "name": "bvxzmcb",
+        "email": "bzxvah@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "67c8",
+      "userInfo": {
+        "name": "nbfs",
+        "email": "nfb@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "e93f",
+      "userInfo": {
+        "name": "bnjdsbf",
+        "email": "jsnfdl@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "e61f",
+      "userInfo": {
+        "name": "ndzbfsn",
+        "email": "zfxbaj@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "a2fe",
+      "userInfo": {
+        "name": "migration",
+        "email": "migration@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "bb56",
+      "userInfo": {
+        "name": "localandhosted",
+        "email": "localandhosted@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "3ad1",
+      "userInfo": {
+        "name": "qwerty",
+        "email": "qwerty@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "7bc6",
+      "userInfo": {
+        "name": "qwerty",
+        "email": "qwerty@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "8161",
+      "userInfo": {
+        "name": "qwerty",
+        "email": "qwerty@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "8d8d",
+      "userInfo": {
+        "name": "qwerty",
+        "email": "qwerty@gmail.com",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
+    },
+    {
+      "id": "61b3",
+      "userInfo": {
+        "name": "EBIESUWA OLUWASEUN",
+        "email": "ebiesuwao@babcock.edu.ng",
+        "password": "pass",
+        "confirmPassword": "pass"
+      },
+      "healthData": {
+        "weightTracker": [],
+        "stressManagement": [],
+        "periodLogs": [],
+        "nextPeriod": "",
+        "ovulation": ""
+      }
     }
   ],
   "funFact": [
@@ -223,6 +495,32 @@
       },
       "dailyChallenge": "",
       "moodRecommendation": "You're feeling happy! Keep up the great work!"
+    },
+    {
+      "id": 1736783938415,
+      "weight": 60,
+      "date": "2025-01-14T00:00:00.000Z",
+      "mood": "😞",
+      "energyLevel": "7",
+      "funFact": {
+        "id": "1",
+        "title": "Laughter boosts your immune system by increasing infection-fighting antibodies."
+      },
+      "dailyChallenge": "",
+      "moodRecommendation": "Feeling down? Remember, setbacks are just setups for comebacks!"
+    },
+    {
+      "id": 1736783968363,
+      "weight": 60,
+      "date": "2025-01-13T00:00:00.000Z",
+      "mood": "Not specified",
+      "energyLevel": "7",
+      "funFact": {
+        "id": "1",
+        "title": "Laughter boosts your immune system by increasing infection-fighting antibodies."
+      },
+      "dailyChallenge": "",
+      "moodRecommendation": "Feeling down? Remember, setbacks are just setups for comebacks!"
     }
   ],
   "stress_management": [

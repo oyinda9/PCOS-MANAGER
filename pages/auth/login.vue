@@ -118,7 +118,7 @@ const handleLogin = async () => {
     // const response = await axios.get("/json/db.json");
     // const users = response.data.users;  // Access the users array from db.json
     // Get the API URL from the environment variable
-    const apiUrl = import.meta.env.VITE_API_URL;
+    const apiUrl = import.meta.env.VITE_REMOTE_API_URL;
 
     // Fetch users from the local JSON Server (replace with your actual endpoint)
     const response = await axios.get(`${apiUrl}/users`);
